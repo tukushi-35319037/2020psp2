@@ -4,7 +4,7 @@
 #include <math.h>
 
 extern double ave_online(double val,double ave,int i);
-extern double var_online(double ave,double val,double square_ave,int i);
+extern double var_online(double val,double ave,double square_ave,int i);
 
 int main(void)
 {
@@ -13,7 +13,7 @@ int main(void)
     char buf[256];
     int i=0;
     double ave=0;
-    double var,square_ave,var_h;
+    double var=0,square_ave=0,var_h=0;
     FILE* fp;
 
     printf("input the filename of sample:");
@@ -29,37 +29,38 @@ int main(void)
 
     while(fgets(buf,sizeof(buf),fp) != NULL){
         sscanf(buf,"%lf",&val);
-        i=i+1;
-        ave=ave_online( ave, val, i);
-        square_ave=(i-1)*ave*ave+val*val/i;
-        var=var_online(i,square_ave,val,ave);
-
-    
+        i++;
+        
+        
+        var=var_online(val,ave,square_ave,i);
+      ave=ave_online( val,ave, i);
+     square_ave=ave_online(pow(val,2),square_ave,i);
 
 
 
     }
-var_h=i*var/(i-1);
+
     if(fclose(fp) == EOF){
         fputs("file close error\n",stderr);
         exit(EXIT_FAILURE);
     }
-
-printf("平均は%f",ave);
-printf("分散は%f",var);
-printf("不変分散は%f",var_h);
+var_h=i*var/(i-1);
+printf("ave=%f\n",ave);
+printf("var=%f\n",var);
+printf("h_var=%f\n",var_h);
+printf("h_ave=%f\n",ave);
     return 0;
 
 
 
 }
 
- double ave_online(double ave ,double val,int i)
+ double ave_online(double val ,double ave,int i)
 {
-        return((i-1)*ave/i + val/i);
+        return(((i-1)*ave/i) + (val/i));
 
 }
- double var_online(double ave,double val,double square_ave,int i)
+ double var_online(double val,double ave,double square_ave,int i)
 {
-    return( ((i-1)*square_ave/i+val*val/i)-((i-1)*ave/i+val/i));
+    return(((i-1)*square_ave/i)+pow(val,2)/i)-pow((((i-1)*ave/i)+(val/i)),2);
 }

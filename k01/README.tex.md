@@ -42,19 +42,37 @@ $$u^2=\dfrac{1}{N-1}\sum_{i=1}^{N}\left(x_{i}-\bar{x}\right)^2=\dfrac{N}{N-1}s^2
 |母集団分散|$28.98$|
 
 ## ソースコードの説明
-
-あいうえお
+6.関数ave_onlineのプロトタイプ宣言
+7.関数val_onlineのプロトタイプ宣言
+14~16.引数の宣言
+32.i（valの数）を＋１する
+35.varにvar_onlineの値を代入する
+35.aveにave_onlineの値を代入する
+36.valをvalの二乗して、ave_onlineの値をsquare_aveに代入する
+47var_hにvarをi/i-1をかけたものを代入する
+48.aveを出力する
+49.varを出力する
+50.var_hを出力する
+51aveを出力する
+58.プロトタイプ宣言したave_onlineの内容を書き始める
+60.ave_Onlineに(((i-1)*ave/i) + (val/i))を返す
+63.プロトタイプ宣言したvar_onlineの内容を書き始める
+65.var_onlineに(((i-1)*square_ave/i)+pow(val,2)/i)-pow((((i-1)*ave/i)+(val/i)),2)を返す
 
 ## 入出力結果
 
 ```
 input the filename of sample:../sample/heights_male.csv
 the filename of sample: ../sample/heights_male.csv
-sample mean：
+sample mean：1
 sample variance：
 population mean (estimated)：
 population variance (estimated)：
 ```
+ave=173.888750
+var=25.361711
+h_var=28.984813
+h_ave=173.888750
 
 ## 修正履歴
 
