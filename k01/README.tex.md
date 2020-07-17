@@ -70,10 +70,15 @@ population mean (estimated)：
 population variance (estimated)：
 ```
 ave=173.888750
+
 var=25.361711
+
 h_var=28.984813
+
 h_ave=173.888750
 
 ## 修正履歴
 
-説明は「かきくけこ」だ！
+[comment0717宮下]
+
+課題提出お疲れさまでした！修正点はありません。k01完了です。
