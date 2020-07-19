@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#define _USE_MATH_DEFINES
 #include <math.h>
-
 extern double p_stdnorm(double z);
 
 int main(void)
@@ -11,8 +11,9 @@ int main(void)
     char fname[FILENAME_MAX];
     char buf[256];
     FILE* fp;
-    double L1=1,L2=1;
-
+    double L1=1,L2=1,L;
+    double ave_A=170.8,sigma_A=5.43,ave_B=169.7,sigma_B=5.5;
+    double max_val,min_val,z;
     printf("input the filename of sample:");
     fgets(fname,sizeof(fname),stdin);
     fname[strlen(fname)-1] = '\0';
@@ -26,6 +27,13 @@ int main(void)
 
     while(fgets(buf,sizeof(buf),fp) != NULL){
         sscanf(buf,"%lf",&val);
+        z=(val-ave_A)/sigma_A;
+        L=p_stdnorm(z);
+        L1=L*L1;
+        z=(val-ave_B)/sigma_B;
+        L=p_stdnorm(z);
+        L2=L*L2;
+
 
 
     
@@ -33,6 +41,8 @@ int main(void)
 
 
     }
+    max_val=L1;
+    min_val=L2;
 
     if(fclose(fp) == EOF){
         fputs("file close error\n",stderr);
