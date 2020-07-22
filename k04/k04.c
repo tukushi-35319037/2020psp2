@@ -20,11 +20,11 @@ int main(void)
 
     printf("input the filename of sample_heght;");
     fgets(fname_height,sizeof(fname_height),stdin);
-    fname_height[strlen(fname)-1]='\0';
+    fname_height[strlen(fname_height)-1]='\0';
     printf("the filename of sample_ID;");
-    fgets(fname_ID,sizeof(fname_ID,stdin);
-    fname_ID[strlen(fname_ID),stdin];
-    printf("Which ID?;";
+    fgets(fname_ID,sizeof(fname_ID),stdin);
+    fname_ID[strlen(fname_ID)-1]='\0';
+    printf("Which ID?;");
     scanf("%d",&input_id);
 
     fp_height = fopen(fname_height,"r");
@@ -43,7 +43,7 @@ int main(void)
     }
 
     fgets(buf_height,sizeof(buf_height),fp_height);
-while(fgets(buf_height,sizeof(buf_height),fp_height) != NULL) && fgets(buf_ID,sizeof(buf_ID) !=NULL)
+while(fgets(buf_height,sizeof(buf_height),fp_height) != NULL) && fgets(buf_ID,sizeof(buf_ID),buf_ID) !=NULL)
 {
     if(i==-1)
     {
