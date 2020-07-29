@@ -29,7 +29,7 @@ int main(void)
         exit(EXIT_FAILURE);
     }
 
-    fgets(fname,sizeof(fname),stderr);
+    fgets(buf,sizeof(buf),stderr);
    while(fgets(buf,sizeof(buf),fp) != NULL)
    {
        sscanf(buf,"%d,%lf",&data[i].gender,&data[i].height);

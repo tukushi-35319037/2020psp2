@@ -66,18 +66,16 @@ Which ID's data do you want? : 45313124
 ---
 No data
 ```
-$ ./k04
-input the filename of sample_heght;c:\Users\kyo\Downloads\Excel練習問題\35319037\2020psp2\sample\heightss.csv
-the filename of sample_ID:c:\Users\kyo\Downloads\Excel練習問題\35319037\2020psp2\sample\heights.csv
+input the filename of sample_heght;c:/Users/kyo/Downloads/Excel練習問題/35319037/2020psp2/sample/heights.csv
+the filename of sample_ID:c:/Users/kyo/Downloads/Excel練習問題/35319037/2020psp2/sample/heights.csv
 input filename of sample ID:c:\Users\kyo\Downloads\Excel練習問題\35319037\2020psp2\sample\IDs.csv
 filename of sample:c:\Users\kyo\Downloads\Excel練習問題\35319037\2020psp2\sample\IDs.csv
 which ID's data do you want?
 45313124
 No data
 
-$ ./k04
-input the filename of sample_heght;c:/Users/kyo/Downloads/Excel練習問題/35319037/2020psp2/sample/heights.csv
-the filename of sample_ID:c:/Users/kyo/Downloads/Excel練習問題/35319037/2020psp2/sample/heights.csv
+input the filename of sample_heght;c:\Users\kyo\Downloads\Excel練習問題\35319037\2020psp2\sample\heights.csv
+the filename of sample_ID:c:\Users\kyo\Downloads\Excel練習問題\35319037\2020psp2\sample\heights.csv
 input filename of sample ID:c:\Users\kyo\Downloads\Excel練習問題\35319037\2020psp2\sample\IDs.csv
 filename of sample:c:\Users\kyo\Downloads\Excel練習問題\35319037\2020psp2\sample\IDs.csv
 which ID's data do you want?
