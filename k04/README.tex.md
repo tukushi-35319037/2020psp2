@@ -85,3 +85,8 @@ which ID's data do you want?
 ID:45313125 gender:male height:167.830000
 ## 修正履歴
 
+[comment0729宮下]
+
+課題提出お疲れさまでした！修正点があります。
+出力結果が例と異なっています。空読みができていないようです。
+L32 fgets(fname,sizeof(fname),stderr);　ではなく　fgets(buf, sizeof(buf),fp);　です。
