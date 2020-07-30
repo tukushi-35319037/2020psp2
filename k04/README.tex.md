@@ -84,5 +84,9 @@ ID:45313125 gender:female height:152.400000
 ## 修正履歴
 
 [comment0729宮下]
-が例と異なっています。空読みができていないようです。
-L32 fgets(fname,sizeof(fname),stderr);　ではなく　fgets(buf, sizeof(buf),fp);　です。
+出力が例と異なっています。空読みができていないようです。
+- L32 fgets(fname,sizeof(fname),stderr);　ではなく　fgets(buf, sizeof(buf),fp);　です。
+
+[comment0730宮下]
+
+課題提出お疲れさまでした！修正点はありません。k04完了です。
