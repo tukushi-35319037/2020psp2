@@ -74,17 +74,15 @@ which ID's data do you want?
 45313124
 No data
 
-input the filename of sample_heght;c:\Users\kyo\Downloads\Excel練習問題\35319037\2020psp2\sample\heights.csv
-the filename of sample_ID:c:\Users\kyo\Downloads\Excel練習問題\35319037\2020psp2\sample\heights.csv
+input the filename of sample_heght;c:/Users/kyo/Downloads/Excel練習問題/35319037/2020psp2/sample/heights.csv
+the filename of sample_ID:c:/Users/kyo/Downloads/Excel練習問題/35319037/2020psp2/sample/heights.csv
 input filename of sample ID:c:\Users\kyo\Downloads\Excel練習問題\35319037\2020psp2\sample\IDs.csv
 filename of sample:c:\Users\kyo\Downloads\Excel練習問題\35319037\2020psp2\sample\IDs.csv
 which ID's data do you want?
 45313125
-ID:45313125 gender:male height:167.830000
+ID:45313125 gender:female height:152.400000
 ## 修正履歴
 
 [comment0729宮下]
-
-課題提出お疲れさまでした！修正点があります。
-出力結果が例と異なっています。空読みができていないようです。
+が例と異なっています。空読みができていないようです。
 L32 fgets(fname,sizeof(fname),stderr);　ではなく　fgets(buf, sizeof(buf),fp);　です。
