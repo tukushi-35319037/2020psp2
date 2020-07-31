@@ -11,6 +11,7 @@ bb35319037 平松響
 この二つのファイルを読み取り，学籍番号，身長，性別の3つをメンバーとする構造体の配列で管理するとよい．
 
 ## ソースコードの説明
+```
 1~4.ヘッダファイルを読み込む
 6~11.構造体を定義する
 13.main関数が始まる
@@ -39,32 +40,13 @@ bb35319037 平松響
 84.i=i+1する
 86,86.idが見つからなかったら、見つからなかったことを示す。
 88.main関数が終了
-
+```
 
 
 
 ## 入出力結果
 
-例えば，ID 45313125のデータを調べたいとき，
 
-```
-Input the filename of sample height : ../sample/heights.csv
-Input the filename of sample ID : ../sample/IDs.csv
-Which ID's data do you want? : 45313125
----
-ID : 45313125
-gender : Female
-height : 152.4
-```
-
-例えば，ID 45313124のデータを調べたいとき，
-
-```
-Input the filename of sample height : ../sample/heights.csv
-Input the filename of sample ID : ../sample/IDs.csv
-Which ID's data do you want? : 45313124
----
-No data
 ```
 input the filename of sample_heght;c:/Users/kyo/Downloads/Excel練習問題/35319037/2020psp2/sample/heights.csv
 the filename of sample_ID:c:/Users/kyo/Downloads/Excel練習問題/35319037/2020psp2/sample/heights.csv
@@ -73,7 +55,9 @@ filename of sample:c:\Users\kyo\Downloads\Excel練習問題\35319037\2020psp2\sa
 which ID's data do you want?
 45313124
 No data
+```
 
+```
 input the filename of sample_heght;c:/Users/kyo/Downloads/Excel練習問題/35319037/2020psp2/sample/heights.csv
 the filename of sample_ID:c:/Users/kyo/Downloads/Excel練習問題/35319037/2020psp2/sample/heights.csv
 input filename of sample ID:c:\Users\kyo\Downloads\Excel練習問題\35319037\2020psp2\sample\IDs.csv
@@ -81,6 +65,8 @@ filename of sample:c:\Users\kyo\Downloads\Excel練習問題\35319037\2020psp2\sa
 which ID's data do you want?
 45313125
 ID:45313125 gender:female height:152.400000
+```
+
 ## 修正履歴
 
 [comment0729宮下]
@@ -90,3 +76,6 @@ ID:45313125 gender:female height:152.400000
 [comment0730宮下]
 
 課題提出お疲れさまでした！修正点はありません。k04完了です。
+
+[comment #20200731 sonoda]
+- 課題4の完了を確認しました
